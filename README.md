@@ -46,5 +46,5 @@ A Fast diffusion probabilistic models (DPM) method which can generate high-quali
 ## Citation
 
 ```
-ggg
+...
 ```
