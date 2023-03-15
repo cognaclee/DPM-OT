@@ -1,0 +1,11 @@
+torch
+numpy
+tqdm
+tensorboard
+ml-collections
+
+安装apex模块
+git clone https://github.com/ptrblck/apex.git
+cd apex
+git checkout apex_no_distributed
+pip install -v --no-cache-dir ./
