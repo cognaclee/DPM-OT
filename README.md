@@ -21,6 +21,7 @@ Sampling from diffusion probabilistic models (DPMs) can be viewed as a piecewise
     ```
 
 2. Sampling
+
     First, generate the target latent variable through the following instructions.
 
     ```bash
