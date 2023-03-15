@@ -31,11 +31,13 @@ Sampling from diffusion probabilistic models (DPMs) can be viewed as a piecewise
     ```bash
     python main.py --sample --config cifar10.yml -i cifar10 --doc cifar10
     ```
-    The above instructions are just examples of cifar10 data sets. For celeaba and ffhq, just replace cafar10 with the corresponding dataset name.
+    The above instructions are just examples of cifar10 datasets. For celeaba and ffhq, just replace cafar10 with the corresponding dataset name.
 
 3. Evaluation
 
     ```bash
+    python3 test.py --name cifa10-test --trained_model_dir output/cifar10-100_500_checkpoint.pth --figure_dir figure/cifar10
+    ```
 
 
 ## Citation
