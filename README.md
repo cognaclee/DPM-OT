@@ -43,8 +43,8 @@ Sampling from diffusion probabilistic models (DPMs) can be viewed as a piecewise
      python ./metrics/evaluator.py VIRTUAL_imagenet256_labeled.npz admnet_guided_upsampled_imagenet256.npz
     ```
 
-    Calculate the mode mixture metric MMR by running the following
-    ### Train Model
+    3.2 Calculate the mode mixture metric MMR by running the following
+    #### Train Model
     CIFAR-10 and CIFAR-100 are automatically download and train. In order to use a different dataset you need to customize [data_utils.py](./utils/data_utils.py).
 
     The default batch size is 512. When GPU memory is insufficient, you can proceed with training by adjusting the value of `--gradient_accumulation_steps`.
@@ -60,7 +60,7 @@ Sampling from diffusion probabilistic models (DPMs) can be viewed as a piecewise
     However, this code does not automatically download Tiny-ImageNet-200 data set, so it is necessary to download the data set in advance and put it into 
     the 'data' folder before use, and then execute this code to train the model.
 
-    ### Calculate the mode mixture metric MMR
+    #### Calculate the mode mixture metric MMR
     
     After training the model on the corresponding data set, we can run the following code (just take the Cifar10 data set as an example, other data sets are similar)
      to test the model on other images and output the number of mode mixture images.
@@ -72,5 +72,6 @@ Sampling from diffusion probabilistic models (DPMs) can be viewed as a piecewise
 
 ```
 * [Google ViT](https://github.com/google-research/vision_transformer)
+* [Vit-B16](https://github.com/jeonsworld/ViT-pytorch)
 * [Pytorch Image Models(timm)](https://github.com/rwightman/pytorch-image-models)
 ```
