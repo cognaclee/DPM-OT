@@ -68,6 +68,13 @@ Sampling from diffusion probabilistic models (DPMs) can be viewed as a piecewise
     python3 test.py --name cifa10-test --trained_model_dir output/cifar10-100_500_checkpoint.pth --figure_dir figure/cifar10
     ```
 
+## Acknowledgments
+```
+* https://github.com/ermongroup/ncsnv2
+* https://github.com/jeonsworld/ViT-pytorch
+```
+
+
 ## Citation
 
 ```
