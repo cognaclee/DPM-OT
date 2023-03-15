@@ -45,7 +45,7 @@ Sampling from diffusion probabilistic models (DPMs) can be viewed as a piecewise
 
     3.2 Calculate the mode mixture metric MMR by running the following
     #### Train Model
-    CIFAR-10 and CIFAR-100 are automatically download and train. In order to use a different dataset you need to customize [data_utils.py](./utils/data_utils.py).
+    We refer to the training code https://github.com/jeonsworld/ViT-pytorch. CIFAR-10 and CIFAR-100 are automatically download and train. In order to use a different dataset you need to customize [data_utils.py](./utils/data_utils.py).
 
     The default batch size is 512. When GPU memory is insufficient, you can proceed with training by adjusting the value of `--gradient_accumulation_steps`.
 
@@ -71,7 +71,5 @@ Sampling from diffusion probabilistic models (DPMs) can be viewed as a piecewise
 ## Citation
 
 ```
-* [Google ViT](https://github.com/google-research/vision_transformer)
-* [Vit-B16](https://github.com/jeonsworld/ViT-pytorch)
-* [Pytorch Image Models(timm)](https://github.com/rwightman/pytorch-image-models)
+
 ```
