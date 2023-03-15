@@ -20,20 +20,19 @@ Sampling from diffusion probabilistic models (DPMs) can be viewed as a piecewise
     cd DPM-OT
     ```
 
-2. Training
+2. Sampling
+    First, generate the target latent variable through the following instructions.
 
     ```bash
-    python 
+    python main.py --test --config cifar10.yml -i cifar10 --doc cifar10 
     ```
-
-3. Testing
-
-
+    Then, calculate the OT map and sample the image with the following instructions.
     ```bash
-    python 
+    python main.py --sample --config cifar10.yml -i cifar10 --doc cifar10
     ```
+    The above instructions are just examples of cifar10 data sets. For celeaba and ffhq, just replace cafar10 with the corresponding dataset name.
 
-4. Evaluation
+3. Evaluation
 
     ```bash
 
