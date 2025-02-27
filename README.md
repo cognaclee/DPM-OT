@@ -78,5 +78,11 @@ Sampling from diffusion probabilistic models (DPMs) can be viewed as a piecewise
 ## Citation
 
 ```
-
+@inproceedings{li2023dpm,
+  title={DPM-OT: a new diffusion probabilistic model based on optimal transport},
+  author={Li, Zezeng and Li, Shenghao and Wang, Zhanpeng and Lei, Na and Luo, Zhongxuan and Gu, David Xianfeng},
+  booktitle={Proceedings of the ieee/cvf international conference on computer vision},
+  pages={22624--22633},
+  year={2023}
+}
 ```
