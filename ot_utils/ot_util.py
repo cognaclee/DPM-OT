@@ -7,7 +7,7 @@ from ot_utils.optimal_transport import OptimalTransport
 
 torch.set_printoptions(precision=8)
 #  generate latent code P
-def transfer_and_generate(OT_solve,sr_feature, args, device):
+def generate_and_remove_singular_points(OT_solve,sr_feature, args, device):
     topk = args.topk
     I_all = OT_solve.transfer_topk(sr_feature, topk)
     numX =  I_all.shape[1]
@@ -102,7 +102,8 @@ def OT_Map(args,sr_feature,OT_solve):
         torch.save(tg_fea, tg_fea_name)
         '''
     else:
-        gen_feat = transfer_and_remove_singular_points(OT_solve,sr_feature, args, device)
+        gen_feat = generate_and_remove_singular_points(OT_solve,sr_feature, args, device)
         
     print('OT Map successfully transfer {} source feature'.format(gen_feat.shape[0]))
+
     return gen_feat
